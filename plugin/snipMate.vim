@@ -24,7 +24,7 @@ if !exists('snippets_dir')
 	let path_list = split(globpath(&rtp, 'snippets/'), "\n")
 	if len(path_list) > 0
 		let snippets_dir = path_list[len(path_list)-1]
-	elseif
+	else
 		let snippets_dir = substitute(globpath(&rtp, 'snippets/'), "\n", ',', 'g')
 	endif
 endif
